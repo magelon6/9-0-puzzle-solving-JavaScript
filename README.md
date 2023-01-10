@@ -12,3 +12,19 @@ This array indexes would represent a number in base 3 that would correspond to o
 For each iteration, the second loop iterates through the 10 digits in the atoms array, and uses the corresponding value from the indexes array to determine which sign to use for that digit. It then concatenates the result to the expr string, which is the expression that the code is trying to evaluate.
 
 Then the expression is passed to the evaluate function to check if it matches the expected sum. If it does it prints the expression and count the number of matches. Finally, it prints the total number of expressions that match the expected sum.
+
+Математическая головоломка сумма цифр от 9 до 0
+
+Этот код ищет все возможные комбинации из 10 цифр (0-9) и знаков плюс и минус, с которыми они могут быть соединены, и подсчитывает количество таких комбинаций, которые дают заданную сумму (в данном случае 200).
+
+Для этого сначала объявляется функция evaluate(expr), которая получает на вход математическое выражение в виде строки и вычисляет его значение. Функция использует стек, накапливая в нём значения чисел, и знак операции, который следует за ними.
+
+Затем в основном теле скрипта инициализируется константа sumNum и переменная count со значением 0. Они будут использоваться для хранения искомой суммы и счетчика количества комбинаций с этой суммой.
+
+Затем определяются константы digits, signs, и atoms, которые содержат строку цифрами, строку знаков плюс и минус, и массив из массивов, в каждом из которых находятся соответствующие цифре знаки ('', плюс, минус).
+
+Затем используется цикл for для перебора всех возможных комбинаций индексов знаков, соответствующих цифрам. Для каждой комбинации индексов создается строка с математическим выражением, в котором цифры и знаки соответствуют текущей комбинации индексов.
+
+Далее, используя функцию evaluate(expr), вычисляется значение созданного выражения, и если оно равно искомой сумме (sumNum), то выражение выводится на экран и счетчик count увеличивается на 1.
+
+По окончании цикла выводится сообщение о количестве найденных выражений с искомой суммой.
