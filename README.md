@@ -13,7 +13,7 @@ For each iteration, the second loop iterates through the 10 digits in the atoms 
 
 Then the expression is passed to the evaluate function to check if it matches the expected sum. If it does it prints the expression and count the number of matches. Finally, it prints the total number of expressions that match the expected sum.
 
-Математическая головоломка сумма цифр от 9 до 0
+<h1>Математическая головоломка сумма цифр от 9 до 0</h1>
 
 Этот код ищет все возможные комбинации из 10 цифр (0-9) и знаков плюс и минус, с которыми они могут быть соединены, и подсчитывает количество таких комбинаций, которые дают заданную сумму (в данном случае 200).
 
